@@ -6,79 +6,76 @@
     <title>Aero at Baylor</title>
     <style>
         body {
-            font-family: Times New Roman, serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Light gray background for contrast */
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #154734; /* Baylor Green */
-            color: #FFD700; /* Gold text */
-            padding: 25px 0;
+            background: url('hero-image.jpg') center/cover no-repeat;
+            color: #FFD700;
             text-align: center;
+            padding: 80px 20px;
+            font-size: 2em;
+            font-weight: bold;
         }
         nav {
-            background-color: #FFB81c; /* Gold background for navigation */
+            background-color: #FFB81c;
             display: flex;
             justify-content: center;
-            padding: 20px 0;
+            padding: 15px 0;
         }
         nav a {
             text-decoration: none;
-            color: #154734; /* Baylor Green text */
-            margin: 0 15px;
+            color: #154734;
+            margin: 0 20px;
             font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: #FFD700;
+            transition: 0.3s;
         }
         nav a:hover {
-            color: #FFD700; /* Gold hover effect */
-            background-color: #006400; /* Dark green background on hover */
-            padding: 5px 10px;
+            background: #154734;
+            color: #FFD700;
         }
         section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white; /* White background for sections */
-            border-radius: 10px; /* Rounded corners for sections */
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            padding: 40px;
+            margin: 20px auto;
+            width: 80%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .team img, .sponsor-logos img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        .sponsor-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
         footer {
-            background-color: #154734; /* Baylor Green */
-            color: #FFB81c; /* Gold text */
+            background-color: #154734;
+            color: #FFB81c;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
+            padding: 5px 0;
+            position: relative;
             width: 100%;
-            bottom: 0;
-        }
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 2px solid #154734; /* Green border */
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: #154734; /* Baylor Green */
-            color: #FFD700; /* Gold text */
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #FFB81c; /* Gold hover */
-            color: #154734; /* Green text on hover */
-        }
-        p {
-            text-indent: 30px; /* Indentation of 30px for readability */
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Aero at Baylor</h1>
+    Aero at Baylor
 </header>
 
 <nav>
@@ -91,65 +88,54 @@
 
 <section id="home">
     <h2>Welcome to Aero at Baylor</h2>
-    <p>We are a student organization at Baylor University dedicated to the advancement of aerospace education and innovation. Our team participates in exciting projects, such as aircraft design, propulsion systems, and more!</p>
+    <p>We are a student organization at Baylor University dedicated to the advancement of aerospace education and innovation.</p>
 </section>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>Aero at Baylor is a student-led organization that provides students with accelerated hands-on experiences with various aerospace projects. The club competes annually in 3D Printed Aircraft Competition at UTA, in which students gain an understanding of aeronautics and RC electronics through the construction of aircraft. We also compete in IREC (Intercollegiate Rocket Engineering Competition) at Spaceport America. In addition to aerospace projects, Aero provides career-boosting opportunities for students like skill-learning workshops and networking events. We invite anyone interested in what our club has to offer to join and get involved!</p>
+<section id="teams">
+    <h2>Our Teams</h2>
+    <div class="team">
+        <h3>IREC Team</h3>
+        <img src="irec-team.jpg" alt="IREC Team">
+        <p>The IREC (Intercollegiate Rocket Engineering Competition) team is focused on designing and building rockets to compete in the national IREC competition. This team challenges students to apply their skills in aerospace engineering, propulsion, and structural design to achieve high-altitude launches. We competed for the first time last year and are looking to go back this year!</p>
+    </div>
+    <div class="team">
+        <h3>3D Printed Aircraft Team</h3>
+        <img src="3d-aircraft-team.jpg" alt="3D Printed Aircraft Team">
+        <p>The 3D Printed Aircraft team works on designing and building fully functional aircraft using advanced 3D printing technology. This team pushes the boundaries of manufacturing techniques and aerospace design by integrating rapid prototyping with traditional aerospace engineering methods. They compete yearly at the UT Arlington 3D-Printed Aircraft Competition. Our team has won 1st place 3 years in a row!</p>
+    </div>
+    <div class="team">
+        <h3>SAE Aero Team</h3>
+        <img src="sae-aero-team.jpg" alt="SAE Aero Team">
+        <p>The SAE Aero team participates in the annual SAE Aero Design competition, where teams are tasked with designing, building, and testing aircraft to meet specific mission criteria. This team hones their skills in aircraft design, materials science, and flight performance while competing against universities worldwide. This year our team is competing in the micro class.</p>
+    </div>
+    <div class="team">
+        <h3>Baylor Liquid Propulsion Team</h3>
+        <img src="liquid-propulsion-team.jpg" alt="Baylor Liquid Propulsion Team">
+        <p>The Baylor Liquid Propulsion Team focuses on developing rocket propulsion systems, specifically liquid rocket engines. This team engages in the research, design, and testing of propulsion systems to provide cutting-edge performance for the club’s rockets and future space missions.</p>
+    </div>
 </section>
 
 <section id="sponsorships">
     <h2>Sponsorships</h2>
-    <p>Our sponsors play a crucial role in supporting our organization and helping us achieve our goals. By partnering with us, sponsors can contribute to the education and development of future aerospace engineers and enjoy the benefits of exposure to our network of students, faculty, and industry partners.</p>
-    <p>If you're interested in becoming a sponsor, please contact our president at Jonathan_Gildehaus1@baylor.edu</p>
-</section>
-<section id="Teams">
-    <div class="container">
-        <h2>Our Teams</h2>
-        <p>We have several exciting teams working on groundbreaking projects. Learn more about each team below:</p>
-
-        <div class="team">
-            <h3>IREC Team</h3>
-            <p>The IREC (Intercollegiate Rocket Engineering Competition) team is focused on designing and building rockets to compete in the national IREC competition. This team challenges students to apply their skills in aerospace engineering, propulsion, and structural design to achieve high-altitude launches. We competed for the first time last year and are looking to go back this year!</p>
-        </div>
-
-        <div class="team">
-            <h3>3D Printed Aircraft Team</h3>
-            <p>The 3D Printed Aircraft team works on designing and building fully functional aircraft using advanced 3D printing technology. This team pushes the boundaries of manufacturing techniques and aerospace design by integrating rapid prototyping with traditional aerospace engineering methods.They compete yearly at the UT Arlington 3D-Printed Aircraft Competition. Our team has one 1st place 3 years in a row!</p>
-        </div>
-
-        <div class="team">
-            <h3>SAE Aero Team</h3>
-            <p>The SAE Aero team participates in the annual SAE Aero Design competition, where teams are tasked with designing, building, and testing aircraft to meet specific mission criteria. This team hones their skills in aircraft design, materials science, and flight performance while competing against universities worldwide. This year our team is competing in the mirco class. </p>
-        </div>
-
-        <div class="team">
-            <h3>Baylor Liquid Propulsion Team</h3>
-            <p>The Baylor Liquid Propulsion Team focuses on developing rocket propulsion systems, specifically liquid rocket engines. This team engages in the research, design, and testing of propulsion systems to provide cutting-edge performance for the club’s rockets and future space missions.</p>
-        </div>
+    <p>Our sponsors help us achieve our goals. Thank you for your support!</p>
+    <div class="sponsor-logos">
+        <img src="sponsor1-logo.jpg" alt="Sponsor 1">
+        <img src="sponsor2-logo.jpg" alt="Sponsor 2">
+        <img src="sponsor3-logo.jpg" alt="Sponsor 3">
     </div>
 </section>
+
 <section id="contact">
-    <div class="container">
-        <h2>Contact Information</h2>
-        <p>If you have any questions, would like to get involved, or learn more about our club, please reach out to us:</p>
-        <div class="row">
-            <div class="column">
-                <h4>President: Jonathan Gildehaus</h3>
-                <p>Email: <a href="mailto:Jonathan_Gildehaus1@baylor.edu">Jonathan_Gildehaus1@baylor.edu</a></p>
-            </div>
-            <div class="column">
-                <h4>Follow Us on Instagram</h3>
-                <p>Instagram: <a href="https://www.instagram.com/aero_at_baylor" target="_blank">@aero_at_baylor</a></p>
-            </div>
-            <div class="column">
-                <h4>Advisor: Anne Spence</h3>
-            </div>
-        </div>
-    </div>
+    <h3>Contact</h3>
+    <p>President: Jonathan Gildehaus</p>
+    <p>Email: <a href="mailto:Jonathan_Gildehaus1@baylor.edu">Jonathan_Gildehaus1@baylor.edu</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/aero_at_baylor" target="_blank">@aero_at_baylor</a></p>
+    <p>Advisor: Anne Spence</p>
 </section>
-</section>
+
+<footer>
+    Aero at Baylor
+</footer>
 
 </body>
 </html>
