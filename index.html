@@ -12,13 +12,13 @@
             background-color: #f4f4f4; /* Light gray background for contrast */
         }
         header {
-            background-color: #006400; /* Baylor Green */
+            background-color: #154734; /* Baylor Green */
             color: #FFD700; /* Gold text */
             padding: 10px 0;
             text-align: center;
         }
         nav {
-            background-color: #FFD700; /* Gold background for navigation */
+            background-color: #FFB81c; /* Gold background for navigation */
             display: flex;
             justify-content: center;
             padding: 10px 0;
@@ -84,6 +84,7 @@
     <a href="#about">About</a>
     <a href="#sponsorships">Sponsorships</a>
     <a href="#contact">Contact</a>
+    <a href="#Teams">Teams</a>
 </nav>
 
 <section id="home">
@@ -108,21 +109,49 @@
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions, comments, or inquiries, feel free to reach out to us using the form below:</p>
-    <form action="submit_form.php" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <div class="container">
+        <h2>Contact Information</h2>
+        <p>If you have any questions, would like to get involved, or learn more about our club, please reach out to us:</p>
+        <div class="row">
+            <div class="column">
+                <h3>President: Jonathan Gildehaus</h3>
+                <p>Email: <a href="mailto:Jonathan_Gildehaus1@baylor.edu">Jonathan_Gildehaus1@baylor.edu</a></p>
+            </div>
+            <div class="column">
+                <h3>Follow Us on Instagram</h3>
+                <p>Instagram: <a href="https://www.instagram.com/aero_at_baylor" target="_blank">@aero_at_baylor</a></p>
+            </div>
+        </div>
+    </div>
+    <section id="Teams">
+    <div class="container">
+        <h2>Our Teams</h2>
+        <p>We have several exciting teams working on groundbreaking projects. Learn more about each team below:</p>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <div class="team">
+            <h3>IREC Team</h3>
+            <p>The IREC (Intercollegiate Rocket Engineering Competition) team is focused on designing and building rockets to compete in the national IREC competition. This team challenges students to apply their skills in aerospace engineering, propulsion, and structural design to achieve high-altitude launches.</p>
+        </div>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <div class="team">
+            <h3>3D Printed Aircraft Team</h3>
+            <p>The 3D Printed Aircraft team works on designing and building fully functional aircraft using advanced 3D printing technology. This team pushes the boundaries of manufacturing techniques and aerospace design by integrating rapid prototyping with traditional aerospace engineering methods.</p>
+        </div>
 
-        <input type="submit" value="Submit">
-    </form>
+        <div class="team">
+            <h3>SAE Aero Team</h3>
+            <p>The SAE Aero team participates in the annual SAE Aero Design competition, where teams are tasked with designing, building, and testing aircraft to meet specific mission criteria. This team hones their skills in aircraft design, materials science, and flight performance while competing against universities worldwide.</p>
+        </div>
+
+        <div class="team">
+            <h3>Baylor Liquid Propulsion Team</h3>
+            <p>The Baylor Liquid Propulsion Team focuses on developing rocket propulsion systems, specifically liquid rocket engines. This team engages in the research, design, and testing of propulsion systems to provide cutting-edge performance for the club’s rockets and future space missions.</p>
+        </div>
+    </div>
 </section>
+
+</section>
+
 
 <footer>
     <p>&copy; 2025 Aero at Baylor | All rights reserved.</p>
