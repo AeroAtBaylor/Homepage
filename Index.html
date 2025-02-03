@@ -3,10 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Webpage</title>
+    <title>Aero at Baylor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004b87; /* Baylor Blue */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #e5e5e5;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #004b87; /* Hover effect matching the header */
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        footer {
+            background-color: #004b87;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Webpage!</h1>
-    <p>This is the homepage of my GitHub-hosted website.</p>
+
+<header>
+    <h1>Aero at Baylor</h1>
+    <p>Advancing Aerospace Innovation and Education</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#sponsorships">Sponsorships</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Aero at Baylor</h2>
+    <p>We are a student organization at Baylor University dedicated to the advancement of aerospace education and innovation. Our team participates in exciting projects, such as aircraft design, propulsion systems, and more!</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Aero at Baylor is composed of passionate students, faculty mentors, and industry professionals working together to foster a collaborative environment for learning and innovation in the aerospace field. We strive to provide students with the opportunity to engage in hands-on aerospace projects, develop technical skills, and make meaningful contributions to the aerospace industry.</p>
+</section>
+
+<section id="sponsorships">
+    <h2>Sponsorships</h2>
+    <p>Our sponsors play a crucial role in supporting our organization and helping us achieve our goals. By partnering with us, sponsors can contribute to the education and development of future aerospace engineers and enjoy the benefits of exposure to our network of students, faculty, and industry partners.</p>
+    <ul>
+        <li>Sponsor 1: Aerospace Company A</li>
+        <li>Sponsor 2: Aerospace Company B</li>
+        <li>Sponsor 3: Aerospace Company C</li>
+    </ul>
+    <p>If you're interested in becoming a sponsor, please contact us through the contact form below.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, comments, or inquiries, feel free to reach out to us using the form below:</p>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Aero at Baylor | All rights reserved.</p>
+</footer>
+
 </body>
 </html>
